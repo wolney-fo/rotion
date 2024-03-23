@@ -2,16 +2,12 @@
 
 Rotion is an Electron Notion-like desktop application created by [@Rocketseat](https://rocketseat.com.br/) for the course Desktop Apps with Electron.
 
-![Cover](./doc/cover.png)
+![screenshot](./doc/screenshot.png)
 
 <div style="display: flex; gap: 16px">
   <img alt="Rocketseat" src="./doc/rocketseat.png" width="64">
   <img alt="Nodejs" src="./doc/electron.png" width="64">
 </div>
-
-## Screenshots
-
-*Coming soon...*
 
 ## Stack
 - [Electron](https://www.electronjs.org/);

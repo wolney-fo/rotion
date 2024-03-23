@@ -17,12 +17,12 @@ export function Editor() {
       Highlight,
       Typography,
       Placeholder.configure({
-        placeholder: "Sem título",
+        placeholder: "Digite um título",
         emptyEditorClass:
           "before:content-[attr(data-placeholder)] before:text-gray-500 before:h-0 before:float-left before:pointer-events-none",
       }),
     ],
-    content: "<h1>New document</h1><p>Type what you need ;)</p>",
+    content: "",
     autofocus: "end",
     editorProps: {
       attributes: {
