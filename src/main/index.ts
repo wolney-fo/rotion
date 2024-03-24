@@ -3,6 +3,9 @@ import { join, resolve } from "node:path";
 import { createFileRoute, createURLRoute } from "electron-router-dom";
 import { electronApp, optimizer, is } from "@electron-toolkit/utils";
 
+import "./ipc"
+import "./store"
+
 function createWindow(): void {
   const mainWindow = new BrowserWindow({
     width: 1120,
