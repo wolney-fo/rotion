@@ -13,12 +13,15 @@ export function CreatePage() {
         return response.data;
       },
       onSuccess: (data) => {
-        queryClient.setQueriesData({ queryKey: ["documents"]}, (documents: Document[] | undefined) => {
-          if (documents && documents.length >= 0) {
-            return [...documents, data]
+        queryClient.setQueriesData(
+          { queryKey: ["documents"] },
+          (documents: Document[] | undefined) => {
+            if (documents && documents.length >= 0) {
+              return [...documents, data];
+            }
+            return [data];
           }
-          return [data]
-        })
+        );
       },
     });
 
